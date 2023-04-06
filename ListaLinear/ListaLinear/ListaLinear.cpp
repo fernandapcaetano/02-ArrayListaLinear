@@ -103,5 +103,18 @@ void inserirElemento()
 
 void buscarElemento()
 {
-
+	int valor, i, pos;
+    cout << "Digite o elemento para ser procurado: ";
+		cin >> valor;
+	for (i=0; i<MAX; i++){
+	    if(lista[i]==valor){
+	        pos = i;
+	        cout <<"O número "<<valor<<" está na posição "<< pos << endl;
+	        
+	        break;
+	    }
+	    else{
+	        cout <<"Valor não encontrado :((( "<< endl;
+	    }
+	}
 }
